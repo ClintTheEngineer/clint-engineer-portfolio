@@ -6,7 +6,7 @@ const FloatingButton = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 100) {
+      if (window.scrollY > 100) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -34,6 +34,7 @@ const FloatingButton = () => {
       width="40px"
       alt="top-btn"
       label="Back To Top"
+      title='Back To Top'
     />
   );
 };

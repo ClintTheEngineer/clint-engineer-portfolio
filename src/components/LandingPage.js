@@ -1,15 +1,20 @@
 import NavBar from "./NavBar";
-import code from '../images/code.jpg'
+import AnimatedTextSlide from "./AnimatedTextSlide";
 
 const LandingPage = () => {
-  const devName = 'Big Daddy Clint'  
+  const devName = 'Clint The Engineer';  
+  const introText = `Software engineering with a holisitic mindset`;
+  const frontEnd = '💻Front-end: UI, Components, Version Control Systems, Package Managers';
+  const backEnd = '💾Back-end: APIs, Auth, Testing, Databases';
 
     return (
         <>
         <div id="landing-page">
         <NavBar />
-        <h1>Hello, {devName} here!</h1>
-        <img src={code} alt="pseudo-code"/>
+        <h1 className="landing-name"><span>Hello, {devName} here!</span></h1>
+        <AnimatedTextSlide text={introText} />
+        <h3 className="landing-text"><span>{frontEnd}</span></h3>
+        <h3 className="landing-text"><span>{backEnd}</span></h3>
         </div>
         </>
     )
