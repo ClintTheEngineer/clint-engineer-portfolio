@@ -1,20 +1,45 @@
+html {
+  background-color: #2b577a;
+}
+
 #landing-page {
   text-align: center;
+  background-image: url('./images/coding3.png');
+  background-size: cover;
+  height: 130vh;
 }
+
+.animated span,
+.landing-name span,
+.landing-text span{
+  background-color: yellow;
+  color: black;
+}
+
 
 h1 {
   margin-top: 5%;
+  font-family: monospace;
 }
-
 
 h2 {
   text-align: center;
+  font-family: monospace;
+}
+
+
+h2 span{
+  text-align: center;
+  border-radius: 5%;
+  color: red;
+  background-color: yellow;
 }
 
 #project-squares {
   display: grid;
   justify-content: center;
   grid-template-columns: auto auto auto;
+  border-radius: 5%;
 }
 
 
@@ -38,6 +63,7 @@ h2 {
 #nav-bar {
   list-style-type: none;
   text-align: center;
+  top: -50%;
 }
 
 li {
@@ -48,6 +74,13 @@ li {
 li a {
   text-decoration: none;
   color: red;
+  font-family: monospace;
+  font-size: larger;
+}
+
+li a:hover {
+  background-color: yellow;
+  font-weight: 600;
 }
 
 @media (max-width: 950px) {
@@ -57,14 +90,24 @@ li a {
   }
 }
 
-#Projects {
+.contact {
+  font-weight: 600;
+}
+
+div #projects {
+  background: url('./images/code_2.jpg');
+}
+
+#projects-header {
   margin-top: 10%;
 }
 
-#tech {
-  text-align: center;
-  background-image: url('./images/tech_stack.jpeg');
+#tech-stack {
+  background: url('./images/code_3.jpg');
+  margin-top: -1.5%;
+  background-position: 10%;
 }
+
 
 .back-to-top-button {
   position: fixed;
@@ -120,16 +163,96 @@ img #one, img #two, img #three {
 .eye #eye1, .eye #github, .eye #eye2, .eye #eye3, .eye #eye4, .eye #eye5, .eye #eye6 {
   height: 6%;
   width: 20px;
-  background-color: red;
+  background-color: yellow;
+  border-radius: 50%;
 }
 
 #project-1, #project-2, #project-3, #project-4, #project-5, #project-6 {
   height: 500px;
 }
 
+.caption {
+  display: block;
+  top: -100px;
+  left: 300px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: rgb(248, 248, 248);
+  text-shadow: 3em;
+  font-weight: 600;
+}
+
+.overlay {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  top: 60%;
+  left: 50%;
+  height: 20%;
+  width: auto;
+  transform: translate(-40%, -50%);
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.641);
+}
+
+
+
 @media screen and (max-width: 920px) {
   #project-squares {
    display: list-item;
     justify-content: center;
   }
+
+  #image-container img {
+    display: grid;
+  }
+}
+
+#image-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+}
+
+#image-container img {
+  width: 60%;
+  margin-left: 15%;
+}
+
+form {
+  text-align: center;
+  width: 93%;
+  height: 200px;
+}
+
+
+#ctc-form {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  margin-left: -2%;
+}
+
+#ctc-form input, #ctc-form textarea, label {
+  width: 153%;
+  display: grid;
+  font-weight: 600;
+}
+
+#send-btn {
+  background-color: yellow;
+  color: red;
+  font-weight: 600;
+  font-size: large;
+  height: 50px;
+  width: 100px;
+  margin-left: 45%;
+  cursor: pointer;
+}
+
+
+#interview-ctc {
+  margin-top: 2%;
+  text-shadow: #bfc5ca;
 }
